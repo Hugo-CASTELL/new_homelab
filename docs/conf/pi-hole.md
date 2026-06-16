@@ -16,6 +16,22 @@ UI is accessible through HTTP and not HTTPS because it should not never leave th
 
 #### DHCP
 
-#### DNS Lists
+Range: 192.168.1.100 to 192.168.1.200
+Netmask: 255.255.255.0 automatic
+Gateway: 192.168.1.1 (ISP hardcoded)
+Lease time: 1w
 
-#### Other options
+[x] Enable DHCPv4 rapid commit
+[x] Enable additional IPv6 support for SLAAC + RA
+
+#### DNS
+
+Upstream DNS Servers :
+- IPv4: Google, Cloudflare
+- IPv6: Google, Cloudflare
+
+[x] Use DNSSEC
+
+# Ad-blocking lists
+
+Chosen from [StevenBlack/hosts as raw github link](https://github.com/StevenBlack/hosts)
