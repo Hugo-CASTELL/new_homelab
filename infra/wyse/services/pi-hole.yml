@@ -3,6 +3,7 @@ services:
   pihole:
     container_name: pihole
     image: pihole/pihole:latest
+    pull_policy: daily
     network_mode: host
     ports:
       # DNS Ports
@@ -43,4 +44,4 @@ services:
 
 secrets:
   pihole_web_password:
-    file: /run/secrets/pihole_web_password
+    file: /mnt/secrets/pihole_web_password

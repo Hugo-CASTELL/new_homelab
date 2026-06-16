@@ -33,7 +33,7 @@ Name=enp1s0
 [Network]
 Address=192.168.1.254/24
 Gateway=192.168.1.1
-DNS=192.168.1.254
+DNS=1.1.1.1
 EOF'
 
 sudo systemctl restart systemd-networkd
